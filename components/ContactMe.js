@@ -28,13 +28,13 @@ const ContactMe = () => {
                 },
                 body: JSON.stringify(data)
             });
+            const res = await respone.json();
+            console.log(res)
             setData({
                 name: "",
                 email: "",
                 text: ""
             });
-            const res = await respone.json();
-            console.log(res)
         } catch (error) {
             console.log("Error Occured:",error);
         }

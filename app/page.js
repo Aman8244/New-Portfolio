@@ -29,11 +29,11 @@ export default function Home() {
         <div className="home-section">
           <section className="intro">
             <div>
-              <p className='intro-para'>
+              <p className="intro-para">
                 I'M <span>Aman Singh</span><br />
                 Full Stack MERN Developer
               </p>
-              <button className='contact-btn'>Contact Me</button>
+              <button className="contact-btn">Contact Me</button>
             </div>
           </section>
           <section className="profile-pic">
@@ -46,12 +46,12 @@ export default function Home() {
           </section>
         </div>
       </div>
-      <div id='about' className={styles.about}>
-        <div className='about-div'>
+      <div id="about" className={styles.about}>
+        <div className="about-div">
           <h1>
             About
           </h1>
-          <div className='about-para'>
+          <div className="about-para">
             <hr />
             <p>
 
@@ -71,7 +71,7 @@ export default function Home() {
           <div>
             {skills.map((el, key) => {
               return (
-                <div key={key} className='maindiv-skills'>
+                <div key={key} className="maindiv-skills">
                   <Skills {...el} />
                 </div>
               )
@@ -79,7 +79,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id='portfolio' className={styles.portfolio}>
+      <div id="portfolio" className={styles.portfolio}>
         <div className="portfolio">
           <h1>Portfolio</h1>
           <hr />
@@ -87,14 +87,14 @@ export default function Home() {
         <div>
           {projects.map((el, key) => {
             return (
-              <div key={key} className='project-card'>
+              <div key={key} className="project-card">
                 <ProjectCard {...el} />
               </div>
             )
           })}
         </div>
       </div>
-      <div id='contact' className={styles.contact}>
+      <div id="contact" className={styles.contact}>
         <ContactMe />
       </div>
     </main>
