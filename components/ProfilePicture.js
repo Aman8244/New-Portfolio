@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Image from 'next/image'
 const ProfilePicture = () => {
     return (
         <div className='dp'>
-            <img height={450} src={"/profile-pic.png"} alt='dp' />
+            <Image height={450} src={"/profile-pic.png"} alt='dp' />
         </div>
     )
 }
