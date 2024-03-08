@@ -7,7 +7,7 @@ const ContactMe = () => {
         email: "",
         text: ""
     });
-    
+
     const handleInputChange = (e) => {
         const field = e.target.name;
         const value = e.target.value;
@@ -36,15 +36,17 @@ const ContactMe = () => {
                 text: ""
             });
         } catch (error) {
-            console.log("Error Occured:",error);
+            console.log("Error Occured:", error);
         }
     }
     return (
         <div className="contactme">
             <div >
-                <hr className='contact-lefthr' />
-                <h1 className='contactme-h1'>Contact Me</h1>
-                <hr className='contact-righthr' />
+                <div className="contact-heading">
+                    <hr className='contact-lefthr' />
+                    <h1 className='contactme-h1'>Contact Me</h1>
+                    <hr className='contact-righthr' />
+                </div>
                 <div className='contactme-form'>
                     <div className="my-6">
                         <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333] font-[sans-serif]">

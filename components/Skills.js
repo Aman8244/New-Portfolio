@@ -7,7 +7,7 @@ const Skills = (props) => {
     <div className='skills-div'>
       <div className='innerdiv-skills'>
         <div>
-          <Image src={logoUrl} alt="logo" />
+          <Image width={150} height={100} src={logoUrl} alt="logo" />
         </div>
       </div>
     </div>

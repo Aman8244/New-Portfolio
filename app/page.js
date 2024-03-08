@@ -16,7 +16,9 @@ export default function Home() {
     { name: "CSS", image: "/icons8-css-100.png" },
     { name: "Javascript", image: "/icons8-js.gif" },
     { name: "Cpp", image: "/icons8-c-plus-plus-64.png" },
-    { name: "Redux Toolkit", image: "/icons8-redux-144.png" }
+    { name: "Redux Toolkit", image: "/icons8-redux-144.png" },
+    { name: "Tailwind Css", image: "/icons8-tailwind-css-144.png"},
+    { name:"Nextjs", image:"/icons8-nextjs-144.png"}
   ];
   const projects = [
     { name: "LiveStock Guardian", link: "https://github.com/Aman8244/E-Commerce-MERN", image: "/livestock-guardian.png", detail: "This is a hackathon project (VGU Code Red 3.0 trialthon 2023) in which we solved the problem of early detection of diseases using AI.Tech Stack- MERN and flask for making api to machine learning model.", time: "Oct 2023 - Oct 2023" },

@@ -5,7 +5,258 @@
     margin: 0;
     padding: 0;
 }
+@media screen and (max-width:900px) {
+    .nav {
+        text-align: center;
+        background: transparent;
+        padding: 3% 0%;
+    }
 
+    .nav div {
+        width: 100%;
+    }
+
+    .nav-link {
+        color: grey;
+        text-decoration: none;
+        margin: 0% 2%;
+        font-family: Montserrat, sans-serif;
+        font-size: 16px;
+    }
+
+    .nav-link:hover {
+        color: white;
+    }
+
+    .home-section {
+        
+    }
+    .profile-pic{
+        display: inline-block;
+        width: 80%;
+        position: relative;
+        left: 3rem;
+    }
+    .social-media-links{
+        display: inline-block;
+        position: relative;
+        left: 3rem;
+        top: -2rem;
+    }
+    .intro {
+        width: 80%;
+        margin: 0% 10% 5% 10%;
+        word-wrap: break-word;
+    }
+
+    .intro-para {
+        font-family: Montserrat, sans-serif;
+        font-size: 30px;
+        color: rgb(202, 200, 200);
+        margin: 30% 0% 10% 0%;
+    }
+
+    .intro-para span {
+        font-family: serif;
+        font-size: 50px;
+        color: goldenrod;
+    }
+
+    .contact-btn {
+        height: 40px;
+        width: 120px;
+        background-color: transparent;
+        border: 2px solid goldenrod;
+        color: goldenrod;
+        font-size: 16px;
+        border-radius: .3rem;
+    }
+
+    .contact-btn:hover {
+        color: grey;
+        border: 2px solid grey;
+    }
+
+    .social-media-links {
+        padding: 18% 0% 0% 0%;
+        margin: 0% 10% 0% 1%;
+    }
+
+    .vertical-line {
+        height: 130px;
+        width: 4px;
+        background-color: goldenrod;
+        border: 0;
+        border-radius: .2rem;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo svg {
+        padding: .7rem 0 0 0;
+    }
+
+    .about-div,
+    .portfolio {
+        padding: 5% 10% 5% 10%;
+    }
+
+    .about-div h1,
+    .portfolio h1 {
+        font-family: monospace;
+        font-size: 50px;
+    }
+
+    .about-para {
+        margin: 1% 0%;
+    }
+
+    .about-para hr {
+        width: 5%;
+        height: 4px;
+        background-color: goldenrod;
+        border: 0;
+        border-radius: .3rem;
+        display: inline-block;
+        margin-bottom: .5%;
+        margin-right: 1%;
+    }
+
+    .about-para p {
+        line-height: 1.5rem;
+        color: rgb(165, 164, 164);
+    }
+
+    .skills div {
+        text-align: center;
+    }
+
+    .skills div h2 {
+        font-family: monospace;
+        font-size: 40px;
+    }
+    .maindiv-skills{
+        display: inline-block;
+        width: 20%;
+        margin: 2.5% 2.5%;
+        padding: 1%;
+    }
+    .skills-div {
+        padding: 8%;
+        margin: 2.5% 5%;
+        background-color: rgb(47, 46, 46);
+        border: 0;
+        border-radius: 1.5rem;
+        box-shadow: 2px 2px 2px black;
+    }
+    .innerdiv-skills img{
+        height: 80px;
+        width: 100%;
+    }
+    .skills-div:hover {
+        background-color: rgb(241, 180, 67);
+    }
+
+    .portfolio hr {
+        width: 5%;
+        height: 4px;
+        border: 0;
+        border-radius: .3rem;
+        margin-bottom: .5%;
+        margin-right: 1%;
+        background-color: #FFE5E5;
+    }
+
+    .project-card {
+        width: 80%;
+        /* Adjust width as needed */
+        border: 1px solid #ccc;
+        overflow: hidden;
+        position: relative;
+        height: 350px;
+        display: inline-block;
+        margin: 3% 10% 0% 10%;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 300px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .project-details p{
+        width: 80%;
+    }
+    .project-details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        word-wrap: break-word;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .project-card:hover .project-details {
+        opacity: 1;
+    }
+
+    .project-card:hover .project-image img {
+        transform: scale(1.1);
+    }
+    .project-details h2{
+        font-family: serif;
+    }
+    .project-details button{
+        margin-top: 4%;
+        height: 40px;
+        width: 60px;
+        background-color: transparent;
+        border: 1px solid green;
+        border-radius: .5rem;
+    }
+    .project-details button:hover{
+        border: 1px solid #FFE5E5;
+    }
+    .project-details button a{
+        color: green;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 16px;
+    }
+    .contactme{
+        position: relative;
+        top: -2rem;
+        
+    }
+    .contactme-h1{
+        display: inline-block;
+        color: white;
+        font-family:monospace;
+        font-size: 33px;
+        width: 40%;
+    }
+    .contact-heading{
+        text-align: center;
+    }
+    .contact-lefthr,.contact-righthr{
+        display: inline-block;
+        width: 30%;
+        height: 4px;
+        border: 0;
+        border-radius: .2rem;
+        background-color: gold;
+    }
+   
+    .contactme-form{
+        margin: 7% 5% 0% 5%;
+    }
+}
 @media screen and (min-width:900px) {
 
     /* .body{
@@ -36,7 +287,7 @@
     .home-section {
         display: flex;
         flex-direction: row;
-
+        height: 560px;
     }
 
     .intro {
