@@ -35,7 +35,7 @@ export default function Home() {
                 I'M <span>Aman Singh</span><br />
                 Full Stack MERN Developer
               </p>
-              <button className="contact-btn">Contact Me</button>
+              <button className="contact-btn">Hire Me</button>
             </div>
           </section>
           <section className="profile-pic">
