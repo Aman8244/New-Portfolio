@@ -3,7 +3,7 @@ import Image from 'next/image'
 const ProfilePicture = () => {
     return (
         <div className='dp'>
-            <Image height={450} src={"/profile-pic.png"} alt='dp' />
+            <Image height={650} src={"/profile-pic.png"} alt='dp' />
         </div>
     )
 }
