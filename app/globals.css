@@ -287,11 +287,11 @@
     .home-section {
         display: flex;
         flex-direction: row;
-        height: 560px;
+        height: 500px;
     }
 
     .intro {
-        width: 65%;
+        width: 75%;
         margin: 0% 5% 0% 20%;
         word-wrap: break-word;
     }
