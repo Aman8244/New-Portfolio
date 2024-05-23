@@ -58,8 +58,7 @@ export default function Home() {
             <p>
 
               Hello! I'm Aman Singh, a passionate and ambitious MERN
-              Stack Developer currently in my 5th semester of studies.
-              I have a strong foundation in web development, with a
+              Stack Developer.I have a strong foundation in web development, with a
               focus on creating dynamic and user-friendly web
               applications using the MERN (MongoDB, Express.js, React,
               Node.js) stack.
