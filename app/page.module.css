@@ -1,10 +1,9 @@
 .home{
-    background-color: rgba(11, 11, 11, 0.836);
+    background-color: rgb(57, 56, 56);
     margin: 0;
     padding: 0;
     color: white;
     width: 100%;
-    
 }
 .about{
     background-color: #2D3250;

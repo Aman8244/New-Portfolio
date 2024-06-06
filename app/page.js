@@ -5,6 +5,7 @@ import SocialLinks from '@/components/SocialLinks'
 import Skills from '@/components/Skills'
 import ProjectCard from '@/components/ProjectCard'
 import ContactMe from '@/components/ContactMe'
+import Link from 'next/link'
 
 export default function Home() {
   const skills = [
@@ -21,6 +22,7 @@ export default function Home() {
     { name:"Nextjs", image:"/icons8-nextjs-144.png"}
   ];
   const projects = [
+    // {name:"UniComplaints",link:"https://github.com/Aman8244/unicomplaints/tree/main",detail:"xx"},
     { name: "LiveStock Guardian", link: "https://github.com/Aman8244/E-Commerce-MERN", image: "/livestock-guardian.png", detail: "This is a hackathon project (VGU Code Red 3.0 trialthon 2023) in which we solved the problem of early detection of diseases using AI.Tech Stack- MERN and flask for making api to machine learning model.", time: "Oct 2023 - Oct 2023" },
     { name: "Trendy Store (E-Commerce)", link: "https://github.com/Aman8244/Livestock-Guardian", image: "https://perfecto-web.com/uploads/portfolio/420/yucar-responsive.png", detail: "An e-commerce app which is built using MERN stack and has all the basic functionalities of an shopping website.", time: "May 2023 - Jun 2023" }
   ];
@@ -35,7 +37,7 @@ export default function Home() {
                 I'M <span>Aman Singh</span><br />
                 Full Stack MERN Developer
               </p>
-              <button className="contact-btn"><a href="https://drive.google.com/file/d/14lqfrAROkZ_ss9-j5TesKALp2onmrU6I/view?usp=sharing">Hire me</a></button>
+              <button className="contact-btn"><Link href={"/Aman-Singh-Resume.pdf"}>Hire me</Link></button>
             </div>
           </section>
           <section className="profile-pic">
