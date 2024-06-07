@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProjectCard = (props) => {
     return (
-        <div>
+        <div className='capitalize '>
             <div className='project-image'>
                 <img src={props.image} alt={props.name} />
 

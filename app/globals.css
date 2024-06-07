@@ -176,7 +176,7 @@
         transition: transform 0.3s ease-in-out;
     }
     .project-details p{
-        width: 80%;
+        width: 100%;
     }
     .project-details {
         position: absolute;
