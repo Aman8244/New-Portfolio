@@ -6,6 +6,7 @@ import Skills from '@/components/Skills'
 import ProjectCard from '@/components/ProjectCard'
 import ContactMe from '@/components/ContactMe'
 import Link from 'next/link'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   const skills = [
@@ -100,6 +101,7 @@ export default function Home() {
       <div id="contact" className={styles.contact}>
         <ContactMe />
       </div>
+      <Footer/>
     </main>
   )
 }
