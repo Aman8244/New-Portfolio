@@ -8,17 +8,11 @@
 @media  screen and (min-width: 300px) and (max-width: 400px) {
     
     .nav {
-        text-align: center;
         background: transparent;
         padding: 1% 0%;
     }
-
+    
     .nav-link {
-        color: grey;
-        text-decoration: none;
-        margin: 0% 6% 0% 0%;
-        font-family: Montserrat, sans-serif;
-        font-size: 16px;
         visibility: hidden;
     }
     
@@ -40,7 +34,7 @@
 
     .intro {
         width: 90%;
-        margin: 15% 2% 15% 8%;
+        margin: 0% 2% 15% 8%;
         word-wrap: break-word;
     }
     .intro-para {
