@@ -23,7 +23,8 @@ export default function Home() {
     { name:"Nextjs", image:"/icons8-nextjs-144.png"}
   ];
   const projects = [
-    // {name:"UniComplaints",link:"https://github.com/Aman8244/unicomplaints/tree/main",detail:"xx"},
+    {name:"Food Planet",link:"https://food-planett.netlify.app/",detail:"A Food Ordering System where user can order food from various restaurants and variety of food items.",image:"/foodplanet.png",time:"March 2024 - March 2024"},
+    {name:"UniComplaints",link:"https://github.com/Aman8244/unicomplaints/tree/main",detail:"A platform where university students can raise complaints adding images and admin can respond to the issues via attaching resolved images. we also implemented check for plagarism so that one issue does not get raised multiple times.",image:"/unicomplaints.png",time:"Feb 2024 - Feb 2024"},
     { name: "LiveStock Guardian", link: "https://github.com/Aman8244/E-Commerce-MERN", image: "/livestock-guardian.png", detail: "This is a hackathon project (VGU Code Red 3.0 trialthon 2023) in which we solved the problem of early detection of diseases using AI.Tech Stack- MERN and flask for making api to machine learning model.", time: "Oct 2023 - Oct 2023" },
     { name: "Trendy Store (E-Commerce)", link: "https://github.com/Aman8244/Livestock-Guardian", image: "https://perfecto-web.com/uploads/portfolio/420/yucar-responsive.png", detail: "An e-commerce app which is built using MERN stack and has all the basic functionalities of an shopping website.", time: "May 2023 - Jun 2023" }
   ];
