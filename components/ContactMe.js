@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import Footer from './Footer';
 
 const ContactMe = () => {
     const [data, setData] = useState({
@@ -8,6 +7,7 @@ const ContactMe = () => {
         email: "",
         text: ""
     });
+    const [sending, setSending] = useState(false);
 
     const handleInputChange = (e) => {
         const field = e.target.name;
@@ -21,6 +21,7 @@ const ContactMe = () => {
     }
     const handleFormSubmit = async (e) => {
         e.preventDefault();
+        setSending(true);
         try {
             const respone = await fetch("/api/contactme", {
                 method: "POST",
@@ -36,6 +37,7 @@ const ContactMe = () => {
                 email: "",
                 text: ""
             });
+            setSending(false)
         } catch (error) {
             console.log("Error Occured:", error);
         }
@@ -96,10 +98,13 @@ const ContactMe = () => {
                                 </div>
                             </div>
                             <form onSubmit={handleFormSubmit} className="ml-auto space-y-4">
-                                <input type='text' value={data.name} placeholder='Name' name='Name' onChange={handleInputChange} className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" />
-                                <input type='email' value={data.email} placeholder='Email' name='Email' onChange={handleInputChange} className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" />
-                                <textarea placeholder='Message' value={data.text} name='Message' rows="6" onChange={handleInputChange} className="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff]"></textarea>
-                                <button type='submit' className="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full">Send</button>
+                                <input type='text' value={data.name} placeholder='Name' required name='Name' onChange={handleInputChange} className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" />
+                                <input type='email' value={data.email} placeholder='Email' required name='Email' onChange={handleInputChange} className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" />
+                                <textarea placeholder='Message' value={data.text} required name='Message' rows="6" onChange={handleInputChange} className="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff]"></textarea>
+                                {sending ?
+                                    <button type='submit' disabled className="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full">Sending...</button>
+                                    :
+                                    <button type='submit' className="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full">Send</button>}
                             </form>
                         </div>
                     </div>
