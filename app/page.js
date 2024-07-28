@@ -19,13 +19,13 @@ export default function Home() {
     { name: "Javascript", image: "/icons8-js.gif" },
     { name: "Cpp", image: "/icons8-c-plus-plus-64.png" },
     { name: "Redux Toolkit", image: "/icons8-redux-144.png" },
-    { name: "Tailwind Css", image: "/icons8-tailwind-css-144.png"},
-    { name:"Nextjs", image:"/icons8-nextjs-144.png"}
+    { name: "Tailwind Css", image: "/icons8-tailwind-css-144.png" },
+    { name: "Nextjs", image: "/icons8-nextjs-144.png" }
   ];
   const projects = [
-    {name:"Artisphere",link:"https://artisphere-aman-singh.vercel.app/",detail:"Artisphere is a unique platform where users can sell their own art products and buy different arts.",image:"/artisphere.png",time:"June 2024 - June 2024"},
-    {name:"Food Planet",link:"https://food-planett.netlify.app/",detail:"A Food Ordering System where user can order food from various restaurants and variety of food items.",image:"/foodplanet.png",time:"March 2024 - March 2024"},
-    {name:"UniComplaints",link:"https://github.com/Aman8244/unicomplaints/tree/main",detail:"A platform where university students can raise complaints adding images and admin can respond to the issues via attaching resolved images also plagarism check for issues raised",image:"/unicomplaints.png",time:"Feb 2024 - Feb 2024"},
+    { name: "Artisphere", link: "https://artisphere-aman-singh.vercel.app/", detail: "Artisphere is a unique platform where users can sell their own art products and buy different arts.", image: "/artisphere.png", time: "June 2024 - June 2024" },
+    { name: "Food Planet", link: "https://food-planett.netlify.app/", detail: "A Food Ordering System where user can order food from various restaurants and variety of food items.", image: "/foodplanet.png", time: "March 2024 - March 2024" },
+    { name: "UniComplaints", link: "https://github.com/Aman8244/unicomplaints/tree/main", detail: "A platform where university students can raise complaints adding images and admin can respond to the issues via attaching resolved images also plagarism check for issues raised", image: "/unicomplaints.png", time: "Feb 2024 - Feb 2024" },
     { name: "LiveStock Guardian", link: "https://github.com/Aman8244/Livestock-Guardian", image: "/livestock-guardian.png", detail: "This is a hackathon project (VGU Code Red 3.0 trialthon 2023) in which we solved the problem of early detection of diseases using AI.Tech Stack- MERN and flask for making api to machine learning model.", time: "Oct 2023 - Oct 2023" },
     { name: "Trendy Store (E-Commerce)", link: "https://github.com/Aman8244/E-Commerce-MERN", image: "https://perfecto-web.com/uploads/portfolio/420/yucar-responsive.png", detail: "An e-commerce app which is built using MERN stack and has all the basic functionalities of an shopping website.", time: "May 2023 - Jun 2023" }
   ];
@@ -61,12 +61,9 @@ export default function Home() {
           <div className="about-para">
             <hr />
             <p>
-
-              Hello! I'm Aman Singh, a passionate and ambitious MERN
-              Stack Developer.I have a strong foundation in web development, with a
-              focus on creating dynamic and user-friendly web
-              applications using the MERN (MongoDB, Express.js, React,
-              Node.js) stack.
+              A passionate Software Developer with hands-on experience and strong understanding in full-stack web development, specializing in the MERN stack
+              (MongoDB, Express.js, React.js, Node.js) , Nextjs , Typescript and can quickly adapt other frameworks also. With over a year of experience .Driven by a passion for
+              continuous learning, I'm committed to exploring new technologies and expanding my knowledge base.
             </p>
           </div>
         </div>
@@ -103,7 +100,7 @@ export default function Home() {
       <div id="contact" className={styles.contact}>
         <ContactMe />
       </div>
-      <Footer/>
+      <Footer />
     </main>
   )
 }
