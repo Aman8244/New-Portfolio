@@ -16,15 +16,13 @@ export async function POST(req, res) {
         },
     });
 
-    // Email content
     const mailOptions = {
         from: process.env.EMAIL_USER,
-        to: "amansinghmarch16@gmail.com", // Replace with your email
+        to: "amansinghmarch16@gmail.com", 
         subject: 'New Contact Form Submission',
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${text}`,
     };
     try {
-        // Send email
         await transporter.sendMail(mailOptions);
     } catch (error) {
         console.error(error);
